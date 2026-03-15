@@ -12,6 +12,8 @@
       "@components/*": ["./src/components/*"],
       "@hooks/*": ["./src/hooks/*"],
       "@lib/*": ["./src/lib/*"],
+      "@mock/*": ["./src/data/*"],
+      "@types/*": ["./src/types/*"],
       "@sanity/*": ["./src/sanity/*"]
     },
     "lib": ["ES2022", "DOM", "DOM.Iterable"],
