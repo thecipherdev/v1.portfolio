@@ -57,8 +57,8 @@
   --accent-foreground: oklch(21.81% 0.0041 84.59);
   --destructive: oklch(63.58% 0.2088 25.41);
   --destructive-foreground: oklch(100% 0 0);
-  --border: oklch(0% 0 0);
-  --input: oklch(0% 0 0);
+  --border: oklch(0% 0 0 / 0.14);
+  --input: oklch(0% 0 0 / 0.14);
   --ring: oklch(47.57% 0.1667 280.86);
 
   --chart-1: oklch(0.646 0.222 41.116);
@@ -74,7 +74,7 @@
   --sidebar-primary-foreground: oklch(96.7% 0.0082 91.48);
   --sidebar-accent: oklch(92.91% 0.0103 81.79);
   --sidebar-accent-foreground: oklch(21.81% 0.0041 84.59);
-  --sidebar-border: oklch(0% 0 0);
+  --sidebar-border: oklch(0% 0 0 / 0.08);
   --sidebar-ring: oklch(69.3% 0.1051 89.52);
 }
 
@@ -189,14 +189,42 @@
   --color-sidebar-ring: var(--sidebar-ring);
 
   --color-border-subtle: var(--color-border-subtle);
+  --color-border-default: var(--color-border-default);
+  --color-border-strong: var(--color-border-strong);
 
   --color-text-primary: var(--color-text-primary);
   --color-text-secondary: var(--color-text-secondary);
   --color-text-tertiary: var(--color-text-tertiary);
 
+  --color-accent-purple: var(--color-accent-purple);
+  --color-accent-purple-bg: var(--color-accent-purple-bg);
+
+  --color-accent-amber: var(--color-accent-amber);
+  --color-accent-amber-bg: var(--color-accent-amber-bg);
+
+  --color-accent-teal: var(--color-accent-teal);
+  --color-accent-teal-bg: var(--color-accent-teal-bg);
+
   --color-canvas: var(--color-canvas);
   --color-canvas-elevated: var(--color-canvas-elevated);
   --color-accent-green: var(--color-accent-green);
+
+  --radius-pill: var(--radius-pill);
+
+  --animate-blink: blink 1.2s step-end infinite;
+
+  --shadow-card: var(--shadow-card);
+
+  @keyframes blink {
+    0%,
+    100% {
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 0;
+    }
+  }
 }
 
 html,
