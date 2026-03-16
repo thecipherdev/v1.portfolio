@@ -212,6 +212,7 @@
   --radius-pill: var(--radius-pill);
 
   --animate-blink: blink 1.2s step-end infinite;
+  --animate-pload: pload 3s ease-in-out infinite alternate;
 
   --shadow-card: var(--shadow-card);
 
@@ -223,6 +224,16 @@
 
     50% {
       opacity: 0;
+    }
+  }
+
+  @keyframes pload {
+    0% {
+      width: 12%;
+    }
+
+    100% {
+      width: 88%;
     }
   }
 }

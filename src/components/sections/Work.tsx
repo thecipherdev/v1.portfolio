@@ -89,6 +89,15 @@ export function Work() {
                       {proj.description}
                     </p>
                   </div>
+                  <div className="mb-5">
+                    <div className="h-1.5 w-full overflow-hidden rounded-full bg-border-subtle">
+                      <div className="h-full rounded-full bg-accent-amber animate-pload" />
+                    </div>
+
+                    <p className="mt-1.5 font-dm-mono text-[9px] text-text-tertiary">
+                      deployment progress
+                    </p>
+                  </div>
                 </div>
               )}
 
