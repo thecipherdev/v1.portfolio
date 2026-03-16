@@ -191,13 +191,23 @@
   --color-border-subtle: var(--color-border-subtle);
 
   --color-text-primary: var(--color-text-primary);
+  --color-text-secondary: var(--color-text-secondary);
+  --color-text-tertiary: var(--color-text-tertiary);
+
   --color-canvas: var(--color-canvas);
+  --color-canvas-elevated: var(--color-canvas-elevated);
+  --color-accent-green: var(--color-accent-green);
 }
 
 html,
 body,
 #app {
   min-height: 100%;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 @layer base {
