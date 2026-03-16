@@ -32,7 +32,7 @@ export function Navbar() {
         WebkitBackdropFilter: 'blur(16px)',
       }}
     >
-      <div className="mx-auto flex h-[52px] max-w[900px] items-center justify-between px-6">
+      <div className="mx-auto flex h-[52px] max-w-[900px] items-center justify-between px-6">
         <Link
           to="."
           className="font-dm-mono text-sm font-medium text-text-primary"
