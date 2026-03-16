@@ -1,5 +1,6 @@
-import { Link } from '@tanstack/react-router'
-import ThemeToggle from './ThemeToggle'
+import { Link } from '@tanstack/react-router';
+
+import ThemeToggle from './ThemeToggle';
 
 export default function Header() {
   return (
@@ -74,5 +75,5 @@ export default function Header() {
         </div>
       </nav>
     </header>
-  )
+  );
 }

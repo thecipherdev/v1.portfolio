@@ -6,9 +6,8 @@ interface ActiveState {
 }
 
 export const useActive = create<ActiveState>((set) => ({
-  active: "",
+  active: '',
   setActive: (activeLink: string) => {
-    set({ active: activeLink })
-  }
-}))
-
+    set({ active: activeLink });
+  },
+}));

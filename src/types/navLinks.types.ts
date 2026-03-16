@@ -3,4 +3,4 @@ export interface Link {
   href: string;
   icon?: string;
 }
-export type NavLinks = Array<Link>
+export type NavLinks = Array<Link>;

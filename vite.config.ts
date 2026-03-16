@@ -1,13 +1,14 @@
-import { defineConfig } from 'vite'
-import { devtools } from '@tanstack/devtools-vite'
-import { sentryTanstackStart } from "@sentry/tanstackstart-react/vite";
-import tsconfigPaths from 'vite-tsconfig-paths'
+import { devtools } from '@tanstack/devtools-vite';
+import { tanstackStart } from '@tanstack/react-start/plugin/vite';
 
-import { tanstackStart } from '@tanstack/react-start/plugin/vite'
+import { defineConfig } from 'vite';
+import tsconfigPaths from 'vite-tsconfig-paths';
+
 import { cloudflare } from '@cloudflare/vite-plugin';
+import { sentryTanstackStart } from '@sentry/tanstackstart-react/vite';
+import tailwindcss from '@tailwindcss/vite';
+import viteReact from '@vitejs/plugin-react';
 
-import viteReact from '@vitejs/plugin-react'
-import tailwindcss from '@tailwindcss/vite'
 // import { nitro } from 'nitro/vite'
 
 const config = defineConfig({
@@ -20,11 +21,11 @@ const config = defineConfig({
     tanstackStart(),
     viteReact(),
     sentryTanstackStart({
-      org: "acme-99",
-      project: "javascript-tanstackstart-react",
+      org: 'acme-99',
+      project: 'javascript-tanstackstart-react',
       authToken: process.env.SENTRY_AUTH_TOKEN,
     }),
   ],
-})
+});
 
-export default config
+export default config;
