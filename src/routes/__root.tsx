@@ -31,7 +31,78 @@ export const Route = createRootRouteWithContext<MyRouterContext>()({
         content: 'width=device-width, initial-scale=1',
       },
       {
-        title: 'TanStack Start Starter',
+        name: 'description',
+        content:
+          'Jomel is a full-stack developer who builds clean, scalable web apps. Explore projects, read dev insights, and get in touch for freelance work.',
+      },
+      {
+        title: 'Jomel Builds | Full-Stack Developer & Builder',
+      },
+      { name: 'author', content: 'Jomel' },
+      {
+        name: 'keywords',
+        content:
+          'full-stack developer, web developer, NestJS, React, portfolio, hire developer, freelance developer',
+      },
+
+      { property: 'og:type', content: 'website' },
+      {
+        property: 'og:title',
+        content: 'Jomel Builds | Full-Stack Developer & Builder',
+      },
+      {
+        property: 'og:description',
+        content:
+          'Full-stack developer building scalable web apps. Check out my projects and articles, or reach out if you want to work together.',
+      },
+      { property: 'og:url', content: 'https://jomelbuilds.dev' },
+      {
+        property: 'og:image',
+        content:
+          'https://res.cloudinary.com/dmoksrz9f/image/upload/v1773763860/jomelbuilds.portfolio.png',
+      },
+      { name: 'twitter:card', content: 'summary_large_image' },
+      {
+        name: 'twitter:title',
+        content: 'Jomel Builds | Full-Stack Developer & Builder',
+      },
+      {
+        name: 'twitter:description',
+        content:
+          'Full-stack developer building scalable web apps. Projects, articles, and freelance work.',
+      },
+      {
+        name: 'twitter:image',
+        content:
+          'https://res.cloudinary.com/dmoksrz9f/image/upload/v1773763860/jomelbuilds.portfolio.png',
+      },
+      { name: 'twitter:creator', content: '@jomelbuilds' },
+    ],
+    scripts: [
+      {
+        type: 'application/ld+json',
+        children: JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'Person',
+          name: 'Jomel',
+          url: 'https://jomelbuilds.dev',
+          jobTitle: 'Full-Stack Developer',
+          description:
+            'Full-stack developer specializing in clean architecture, performant interfaces, and systems that scale.',
+          knowsAbout: [
+            'React',
+            'TypeScript',
+            'NestJS',
+            'Node.js',
+            'Cloud Infrastructure',
+          ],
+          seeks: {
+            '@type': 'JobPosting',
+            title: 'Freelance Full-Stack Developer',
+            jobLocationType: 'TELECOMMUTE',
+          },
+          workLocation: { '@type': 'Place', name: 'Remote' },
+        }),
       },
     ],
     links: [
@@ -39,6 +110,7 @@ export const Route = createRootRouteWithContext<MyRouterContext>()({
         rel: 'stylesheet',
         href: appCss,
       },
+      { rel: 'canonical', href: 'https://jomelbuilds.dev' },
     ],
   }),
   shellComponent: RootDocument,
