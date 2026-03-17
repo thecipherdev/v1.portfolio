@@ -7,9 +7,9 @@ import {
 } from '@tanstack/react-router';
 import { TanStackRouterDevtoolsPanel } from '@tanstack/react-router-devtools';
 
+import Footer from '@components/layout/Footer';
 import { Navbar } from '@components/layout/Navbar';
 
-import Footer from '../components/Footer';
 import TanStackQueryDevtools from '../integrations/tanstack-query/devtools';
 import TanStackQueryProvider from '../integrations/tanstack-query/root-provider';
 import appCss from '../styles.css?url';
