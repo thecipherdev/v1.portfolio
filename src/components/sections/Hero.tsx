@@ -2,7 +2,7 @@ import { hero } from '@mock/hero';
 
 import FadeIn from '../animations/FadeIn';
 
-export function Hero() {
+function Hero() {
   const { employmentStatus, heading, description, cta, stats } = hero;
   return (
     <section id="hero" className="pb-20 pt-16">
@@ -78,3 +78,5 @@ export function Hero() {
     </section>
   );
 }
+
+export default Hero;
