@@ -24,7 +24,7 @@ export const hero: Hero = {
   stats: [
     { key: 'Status', value: 'open ✓', highlight: true },
     { key: 'Location', value: 'Remote' },
-    { key: 'Experience', value: '7+ years' },
+    { key: 'Experience', value: '3 years' },
     { key: 'Focus', value: 'Full-stack' },
   ],
 };

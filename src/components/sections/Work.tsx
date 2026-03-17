@@ -11,7 +11,7 @@ import BentoGrid from '@components/layout/Bento/BentoGrid';
 
 import { filterCategories, projects } from '@mock/projects';
 
-export function Work() {
+function Work() {
   const { filter, setFilter } = useFilterStore();
   const filtered =
     filter === 'All' ? projects : projects.filter((p) => p.category === filter);
@@ -146,3 +146,5 @@ export function Work() {
     </section>
   );
 }
+
+export default Work;

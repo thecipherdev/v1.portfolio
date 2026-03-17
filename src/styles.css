@@ -213,6 +213,8 @@
 
   --animate-blink: blink 1.2s step-end infinite;
   --animate-pload: pload 3s ease-in-out infinite alternate;
+  --animate-marquee-left: marquee-left 40s linear infinite;
+  --animate-marquee-right: marquee-left 50s linear infinite reverse;
 
   --shadow-card: var(--shadow-card);
 
@@ -234,6 +236,16 @@
 
     100% {
       width: 88%;
+    }
+  }
+
+  @keyframes marquee-left {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(-30%);
     }
   }
 }

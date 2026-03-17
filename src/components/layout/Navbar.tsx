@@ -43,6 +43,7 @@ export function Navbar() {
         <nav className="hidden items-center gap-6 sm:flex">
           {navLinks.map((link) => (
             <a
+              key={link.label}
               href={link.href}
               className={`font-dm-mono text-[12px] transition-colors ${active === link.href ? 'text-text-primary' : 'text-text-secondary hover:text-text-primary'}`}
             >
