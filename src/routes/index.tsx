@@ -1,5 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router';
 
+import Blog from '#/components/sections/Blog';
 import Testimonials from '#/components/sections/Testimonials';
 
 import Hero from '@components/sections/Hero';
@@ -13,6 +14,7 @@ function App() {
       <Hero />
       <Work />
       <Testimonials />
+      <Blog />
     </main>
   );
 }
