@@ -1,6 +1,6 @@
-export interface Link {
-  label: string;
-  href: string;
+import type { Link } from './common.types';
+
+export interface NavLink extends Link {
   icon?: string;
 }
-export type NavLinks = Array<Link>;
+export type NavLinks = Array<NavLink>;
