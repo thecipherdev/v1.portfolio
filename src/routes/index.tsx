@@ -2,6 +2,7 @@ import { createFileRoute } from '@tanstack/react-router';
 
 import Blog from '#/components/sections/Blog';
 import Contact from '#/components/sections/Contact';
+import Experience from '#/components/sections/Experience';
 import Testimonials from '#/components/sections/Testimonials';
 
 import Hero from '@components/sections/Hero';
@@ -13,6 +14,7 @@ function App() {
   return (
     <main>
       <Hero />
+      <Experience />
       <Work />
       <Testimonials />
       <Blog />

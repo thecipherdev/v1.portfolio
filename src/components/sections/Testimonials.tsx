@@ -39,7 +39,7 @@ function Testimonials() {
   const { heading, testimonials } = testimonialsData;
 
   return (
-    <div id="testimonials" className="py-16">
+    <section id="testimonials" className="py-16">
       <div className="mx-auto px-6 max-w-[900px]">
         <SectionLabel label="testimonials" />
         <h2 className="mb-10 font-syne text-2xl font-extrabold text-text-primary sm:text-3xl">
@@ -68,7 +68,7 @@ function Testimonials() {
           ))}
         </MarqueeRow>
       </div>
-    </div>
+    </section>
   );
 }
 

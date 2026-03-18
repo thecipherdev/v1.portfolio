@@ -2,9 +2,8 @@ import { useEffect } from 'react';
 
 import { Link } from '@tanstack/react-router';
 
-import { useActive } from '@hooks/useActive';
-
 import { navLinks } from '@mock/navLinks';
+import { useActive } from '@store/activeStore';
 
 export function Navbar() {
   const { active, setActive } = useActive();
@@ -13,6 +12,7 @@ export function Navbar() {
     const sections = document.querySelectorAll('section[id]');
     const observer = new IntersectionObserver(
       (entries) => {
+        console.log('sections', sections);
         entries.forEach((entry) => {
           if (entry.isIntersecting) setActive(`#${entry.target.id}`);
         });

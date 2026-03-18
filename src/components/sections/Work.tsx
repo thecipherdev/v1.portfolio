@@ -1,5 +1,3 @@
-import { useFilterStore } from '@hooks/useFilterStore';
-
 import { cn } from '@lib/utils';
 
 import BlinkCursor from '@components/animations/BlinkCursor';
@@ -10,6 +8,7 @@ import BentoCell from '@components/layout/Bento/BentoCell';
 import BentoGrid from '@components/layout/Bento/BentoGrid';
 
 import { filterCategories, projects } from '@mock/projects';
+import { useFilterStore } from '@store/filterStore';
 
 function Work() {
   const { filter, setFilter } = useFilterStore();
