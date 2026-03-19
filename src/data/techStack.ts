@@ -1,0 +1,158 @@
+import type { TechStack } from '@/types/techStack.types';
+
+export const techStack: TechStack[] = [
+  {
+    id: 'frontend',
+    name: 'Frontend',
+    color: 'hsl(244 43% 50%)',
+    techs: [
+      {
+        name: 'React',
+        initials: 'Re',
+        level: 3,
+        iconColor: 'hsl(197 97% 96%)',
+        iconBg: 'hsl(197 71% 48%)',
+      },
+      {
+        name: 'Next.js',
+        initials: 'Nx',
+        level: 3,
+        iconColor: 'hsl(0 0% 100%)',
+        iconBg: 'hsl(0 0% 10%)',
+      },
+      {
+        name: 'TypeScript',
+        initials: 'TS',
+        level: 3,
+        iconColor: 'hsl(211 100% 96%)',
+        iconBg: 'hsl(211 60% 48%)',
+      },
+      {
+        name: 'Tailwind',
+        initials: 'Tw',
+        level: 3,
+        iconColor: 'hsl(192 95% 96%)',
+        iconBg: 'hsl(192 91% 36%)',
+      },
+      {
+        name: 'Framer Motion',
+        initials: 'FM',
+        level: 2,
+        iconColor: 'hsl(260 100% 96%)',
+        iconBg: 'hsl(260 67% 50%)',
+      },
+      {
+        name: 'Vue',
+        initials: 'Vu',
+        level: 1,
+        iconColor: 'hsl(153 75% 94%)',
+        iconBg: 'hsl(153 47% 36%)',
+      },
+    ],
+  },
+  {
+    id: 'backend',
+    name: 'Backend',
+    color: 'hsl(160 75% 24%)',
+    techs: [
+      {
+        name: 'Node.js',
+        initials: 'No',
+        level: 3,
+        iconColor: 'hsl(120 40% 94%)',
+        iconBg: 'hsl(120 25% 35%)',
+      },
+      {
+        name: 'PostgreSQL',
+        initials: 'Pg',
+        level: 2,
+        iconColor: 'hsl(210 50% 96%)',
+        iconBg: 'hsl(210 50% 40%)',
+      },
+      {
+        name: 'GraphQL',
+        initials: 'GQ',
+        level: 2,
+        iconColor: 'hsl(319 60% 96%)',
+        iconBg: 'hsl(319 60% 45%)',
+      },
+      {
+        name: 'Prisma',
+        initials: 'Pr',
+        level: 2,
+        iconColor: 'hsl(220 20% 96%)',
+        iconBg: 'hsl(220 20% 28%)',
+      },
+      {
+        name: 'Redis',
+        initials: 'Rd',
+        level: 1,
+        iconColor: 'hsl(0 70% 96%)',
+        iconBg: 'hsl(0 68% 42%)',
+      },
+    ],
+  },
+  {
+    id: 'infra',
+    name: 'Infrastructure',
+    color: 'hsl(37 84% 28%)',
+    techs: [
+      {
+        name: 'Vercel',
+        initials: 'Vc',
+        level: 3,
+        iconColor: 'hsl(0 0% 100%)',
+        iconBg: 'hsl(0 0% 10%)',
+      },
+      {
+        name: 'Docker',
+        initials: 'Dk',
+        level: 2,
+        iconColor: 'hsl(210 85% 96%)',
+        iconBg: 'hsl(210 85% 45%)',
+      },
+      {
+        name: 'AWS',
+        initials: 'AW',
+        level: 2,
+        iconColor: 'hsl(33 90% 96%)',
+        iconBg: 'hsl(33 90% 40%)',
+      },
+      {
+        name: 'GitHub Actions',
+        initials: 'GA',
+        level: 2,
+        iconColor: 'hsl(0 0% 96%)',
+        iconBg: 'hsl(0 0% 22%)',
+      },
+    ],
+  },
+  {
+    id: 'design',
+    name: 'Design',
+    color: 'hsl(16 68% 36%)',
+    techs: [
+      {
+        name: 'Figma',
+        initials: 'Fi',
+        level: 3,
+        iconColor: 'hsl(0 0% 100%)',
+        iconBg: 'hsl(13 90% 56%)',
+      },
+      {
+        name: 'Storybook',
+        initials: 'Sb',
+        level: 2,
+        iconColor: 'hsl(340 60% 96%)',
+        iconBg: 'hsl(340 60% 50%)',
+      },
+      {
+        name: 'Radix UI',
+        initials: 'Rx',
+        level: 2,
+        iconColor: 'hsl(0 0% 96%)',
+        iconBg: 'hsl(0 0% 15%)',
+      },
+    ],
+  },
+];
