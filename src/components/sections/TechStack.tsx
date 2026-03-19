@@ -12,13 +12,11 @@ function TechStack() {
     () => techStack.reduce((sum, c) => sum + c.techs.length, 0),
     [techStack],
   );
-  console.log(activeFilter, techStack);
 
   const visible =
     activeFilter === 'all'
       ? techStack
       : techStack.filter((c) => c.id === activeFilter);
-  console.log('svisi', visible);
   return (
     <section id="stack" className="mx-auto max-w-[900px] px-6 py-16">
       <SectionLabel label="stack" />
@@ -43,11 +41,10 @@ function TechStack() {
           <button
             key={id}
             onClick={() => setActiveFilter(id)}
-            className={`rounded-pill px-3 py-1.5 font-dm-mono text-[10px] border transition-colors duration-150 ${
-              activeFilter === id
+            className={`rounded-pill px-3 py-1.5 font-dm-mono text-[10px] border transition-colors duration-150 ${activeFilter === id
                 ? 'bg-text-primary text-primary-foreground border-transparent'
                 : 'bg-transparent text-text-secondary border-border-default hover:border-border-strong'
-            }`}
+              }`}
           >
             {id === 'all'
               ? 'All'
