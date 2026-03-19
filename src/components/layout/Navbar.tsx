@@ -12,7 +12,6 @@ export function Navbar() {
     const sections = document.querySelectorAll('section[id]');
     const observer = new IntersectionObserver(
       (entries) => {
-        console.log('sections', sections);
         entries.forEach((entry) => {
           if (entry.isIntersecting) setActive(`#${entry.target.id}`);
         });
