@@ -59,7 +59,7 @@ export const Route = createRootRouteWithContext<MyRouterContext>()({
       {
         property: 'og:image',
         content:
-          'https://res.cloudinary.com/dmoksrz9f/image/upload/v1773763860/jomelbuilds.portfolio.png',
+          'https://res.cloudinary.com/dmoksrz9f/image/upload/v1773987544/OG_Thumbnail_r9inge.png',
       },
       { name: 'twitter:card', content: 'summary_large_image' },
       {
