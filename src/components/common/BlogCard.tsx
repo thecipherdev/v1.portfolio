@@ -11,10 +11,22 @@ function BlogCard({ post }: BlogCardProps) {
       className="group flex items-center gap-4 rounded-md border border-border-subtle p-4 transition-all duration-200 hover:border-border-default hover:bg-canvas-elevated"
       target="_blank"
     >
-      <div
-        className="hidden h-14 w-20 shrink-0 rounded-sm sm:block"
-        style={{ backgroundColor: post.thumbnailColor }}
-      />
+      {post.thumbnail ? (
+        <img
+          src={post.thumbnail}
+          alt={post.title}
+          width={80}
+          height={56}
+          loading="lazy"
+          decoding="async"
+          className="hidden h-14 w-20 shrink-0 rounded-sm object-cover sm:block"
+        />
+      ) : (
+        <div
+          className="hidden h-14 w-20 shrink-0 rounded-sm sm:block"
+          style={{ backgroundColor: post.thumbnailColor }}
+        />
+      )}
 
       <div className="flex-1 min-w-0">
         <p className="font-dm-sans text-[13px] font-medium text-text-primary truncate">

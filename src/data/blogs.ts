@@ -10,7 +10,7 @@ export const blogPosts: BlogPost[] = [
     platform: 'goodfrontend.dev',
     thumbnailColor: '#534AB7',
     thumbnail:
-      'https://cdn.sanity.io/images/vwumz4gv/production/3afb35ca08bdcfeed16014a7ce7aa16a8aee79dc-6000x4000.jpg?fm=webp',
+      'https://cdn.sanity.io/images/vwumz4gv/production/010f20528aa74d97af9fba13c3ae0980636f5c0a-3840x2160.jpg?fm=webp',
     url: 'https://goodfrontend.dev/stories/navigating-challenges-embracing-commercetools-studio-for-frontend-excellence',
   },
   {
@@ -20,6 +20,8 @@ export const blogPosts: BlogPost[] = [
     date: 'May 31, 2024',
     platform: 'goodfrontend.dev',
     thumbnailColor: '#0F6E56',
+    thumbnail:
+      'https://cdn.sanity.io/images/vwumz4gv/production/cc039ccb1a4f7cd42eb9518ff9c275d2c3775889-4937x3291.jpg?fm=webp',
     url: 'https://goodfrontend.dev/stories/i-used-tailwind-for-x-months-and-here-s-what-i-learned',
   },
   {
@@ -29,6 +31,8 @@ export const blogPosts: BlogPost[] = [
     date: 'July 26, 2023',
     platform: 'goodfrontend.dev',
     thumbnailColor: '#854F0B',
+    thumbnail:
+      'https://cdn.sanity.io/images/vwumz4gv/production/3afb35ca08bdcfeed16014a7ce7aa16a8aee79dc-6000x4000.jpg?fm=webp',
     url: 'https://goodfrontend.dev/stories/contentful-vs-storyblok-choosing-the-right-cms-for-your-project',
   },
 ];
