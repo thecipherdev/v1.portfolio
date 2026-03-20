@@ -41,10 +41,11 @@ function TechStack() {
           <button
             key={id}
             onClick={() => setActiveFilter(id)}
-            className={`rounded-pill px-3 py-1.5 font-dm-mono text-[10px] border transition-colors duration-150 ${activeFilter === id
+            className={`rounded-pill px-3 py-1.5 font-dm-mono text-[10px] border transition-colors duration-150 ${
+              activeFilter === id
                 ? 'bg-text-primary text-primary-foreground border-transparent'
                 : 'bg-transparent text-text-secondary border-border-default hover:border-border-strong'
-              }`}
+            }`}
           >
             {id === 'all'
               ? 'All'
