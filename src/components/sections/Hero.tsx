@@ -36,6 +36,9 @@ function Hero() {
                 {description}
               </p>
             </FadeIn>
+            <p className="font-dm-mono text-[10px] text-text-tertiary mt-0.5">
+              - Jomel Cadiente
+            </p>
             <FadeIn delay={0.3}>
               <div className="mt-8 flex gap-3">
                 <a

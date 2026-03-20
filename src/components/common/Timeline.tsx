@@ -13,7 +13,7 @@ function TimelineItem({ job, isLast }: TimelineItemProps) {
 
   return (
     <div
-      className={`relative pl-8 sm:pl-10 ${isLast ? '' : 'pb-10'}`}
+      className={`relative sm:pl-10 ${isLast ? '' : 'pb-10'}`}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
@@ -109,5 +109,5 @@ function TimelineItem({ job, isLast }: TimelineItemProps) {
 }
 
 export const Timeline = {
-  item: TimelineItem,
+  Item: TimelineItem,
 };

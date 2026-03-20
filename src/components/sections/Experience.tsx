@@ -37,7 +37,7 @@ const Experience = () => {
 
         {jobs.map((job, i) => (
           <FadeIn key={job.id} delay={i * 0.1}>
-            <Timeline.item job={job} isLast={i === jobs.length - 1} />
+            <Timeline.Item job={job} isLast={i === jobs.length - 1} />
           </FadeIn>
         ))}
       </div>

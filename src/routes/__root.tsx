@@ -33,10 +33,10 @@ export const Route = createRootRouteWithContext<MyRouterContext>()({
       {
         name: 'description',
         content:
-          'Jomel is a full-stack developer who builds clean, scalable web apps. Explore projects, read dev insights, and get in touch for freelance work.',
+          'Jomel Cadiente is a full-stack developer who builds clean, scalable web apps. Explore projects, read dev insights, and get in touch for freelance work.',
       },
       {
-        title: 'Jomel Builds | Full-Stack Developer & Builder',
+        title: 'Jomel Cadiente – Full-Stack Developer | Jomel Builds',
       },
       { name: 'author', content: 'Jomel' },
       {
@@ -84,9 +84,14 @@ export const Route = createRootRouteWithContext<MyRouterContext>()({
         children: JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'Person',
-          name: 'Jomel',
+          name: 'Jomel Cadiente',
           url: 'https://jomelbuilds.dev',
           jobTitle: 'Full-Stack Developer',
+          sameAs: [
+            'https://github.com/thecipherdev',
+            'https://github.com/cadiente-jomel',
+            'https://www.linkedin.com/in/jomel-cadiente/',
+          ],
           description:
             'Full-stack developer specializing in clean architecture, performant interfaces, and systems that scale.',
           knowsAbout: [
