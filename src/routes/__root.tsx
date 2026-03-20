@@ -96,11 +96,6 @@ export const Route = createRootRouteWithContext<MyRouterContext>()({
             'Node.js',
             'Cloud Infrastructure',
           ],
-          seeks: {
-            '@type': 'JobPosting',
-            title: 'Freelance Full-Stack Developer',
-            jobLocationType: 'TELECOMMUTE',
-          },
           workLocation: { '@type': 'Place', name: 'Remote' },
         }),
       },
