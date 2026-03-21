@@ -47,14 +47,6 @@ export const techStack: TechStack[] = [
         iconBg: 'hsl(153 47% 36%)',
       },
       {
-        name: 'Python',
-        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg',
-        initials: 'Py',
-        level: 2,
-        iconColor: 'hsl(211 100% 96%)',
-        iconBg: 'hsl(211 60% 48%)',
-      },
-      {
         name: 'Tailwind',
         icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg',
         initials: 'Tw',
@@ -92,6 +84,14 @@ export const techStack: TechStack[] = [
         level: 3,
         iconColor: 'hsl(120 40% 94%)',
         iconBg: 'hsl(120 25% 35%)',
+      },
+      {
+        name: 'Python',
+        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg',
+        initials: 'Py',
+        level: 2,
+        iconColor: 'hsl(211 100% 96%)',
+        iconBg: 'hsl(211 60% 48%)',
       },
       {
         name: 'Django',
