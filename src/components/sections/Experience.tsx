@@ -11,7 +11,9 @@ const Experience = () => {
 
   return (
     <section id="experience" className="mx-auto max-w-[900px] px-6 py-16">
-      <SectionLabel label="experience" />
+      <FadeIn delay={0.3}>
+        <SectionLabel label="experience" />
+      </FadeIn>
 
       <FadeIn>
         <div className="flex flex-col-reverse sm:flex-row sm:items-end sm:justify-between gap-4 mb-12">

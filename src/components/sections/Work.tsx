@@ -1,6 +1,7 @@
 import { cn } from '@lib/utils';
 
 import BlinkCursor from '@components/animations/BlinkCursor';
+import FadeIn from '@components/animations/FadeIn';
 import SkeletonBlock from '@components/animations/SkeletonBlock';
 import SectionLabel from '@components/common/SectionLabel';
 import StatusPill from '@components/common/StatusPill';
@@ -18,7 +19,9 @@ function Work() {
   return (
     <section id="work" className="py-16">
       <div className="mx-auto max-w-[900px] px-6">
-        <SectionLabel label="Work" />
+        <FadeIn delay={0.3}>
+          <SectionLabel label="Work" />
+        </FadeIn>
 
         <div className="mb-6 flex items-center gap-3 rounded-md border border-border-subtle bg-canvas-elevated px-4 py-3">
           <StatusPill label="building" color="green" pulse />

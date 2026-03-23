@@ -1,3 +1,4 @@
+import FadeIn from '@components/animations/FadeIn';
 import MarqueeRow from '@components/common/MarqueeRow';
 
 import type { Recommendationn } from '@/types/testimonials.types';
@@ -41,7 +42,9 @@ function Testimonials() {
   return (
     <section id="testimonials" className="py-16">
       <div className="mx-auto px-6 max-w-[900px]">
-        <SectionLabel label="testimonials" />
+        <FadeIn delay={0.3}>
+          <SectionLabel label="testimonials" />
+        </FadeIn>
         <h2 className="mb-10 font-syne text-2xl font-extrabold text-text-primary sm:text-3xl">
           {heading}
         </h2>

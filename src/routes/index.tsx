@@ -1,5 +1,7 @@
 import { createFileRoute } from '@tanstack/react-router';
 
+import Footer from '#/components/layout/Footer';
+import { Navbar } from '#/components/layout/Navbar';
 import Blog from '#/components/sections/Blog';
 import Contact from '#/components/sections/Contact';
 import Experience from '#/components/sections/Experience';
@@ -13,14 +15,19 @@ export const Route = createFileRoute('/')({ component: App });
 
 function App() {
   return (
-    <main>
-      <Hero />
-      <Experience />
-      <TechStack />
-      <Work />
-      <Testimonials />
-      <Blog />
-      <Contact />
-    </main>
+    <>
+      <Navbar />
+
+      <main>
+        <Hero />
+        <Experience />
+        <TechStack />
+        <Work />
+        <Testimonials />
+        <Blog />
+        <Contact />
+      </main>
+      <Footer />
+    </>
   );
 }
