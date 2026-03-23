@@ -1,5 +1,3 @@
-import { useEffect, useState } from 'react';
-
 import { motion } from 'framer-motion';
 
 interface Props {
@@ -14,14 +12,12 @@ export function NotFoundConsole({ pathname }: Props) {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: 0.34, ease: [0.22, 1, 0.36, 1] }}
     >
-      {/* Traffic lights */}
       <div className="flex items-center gap-1.5 mb-4">
         <div className="w-2.5 h-2.5 rounded-full bg-[#ff5f57]" />
         <div className="w-2.5 h-2.5 rounded-full bg-[#ffbd2e]" />
         <div className="w-2.5 h-2.5 rounded-full bg-[#28c840]" />
       </div>
 
-      {/* Lines */}
       <ConsoleLine>
         <span className="text-white/30">$ curl https://jomelbuilds.dev</span>
         <span className="text-white/50">{pathname}</span>

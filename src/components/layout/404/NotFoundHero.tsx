@@ -9,7 +9,6 @@ export function NotFoundHero() {
 
   return (
     <>
-      {/* Big 404 */}
       <div className="relative mb-8 inline-block">
         <motion.h1
           className="font-dm-mono font-black text-text-primary leading-none tracking-tighter select-none cursor-default"
@@ -26,7 +25,6 @@ export function NotFoundHero() {
           404
         </motion.h1>
 
-        {/* Sticky note */}
         <motion.div
           className="absolute -top-4 -right-6 z-10 bg-yellow-200 w-[72px] h-[72px] flex items-center justify-center text-center font-dm-mono text-[9px] text-yellow-900 leading-snug p-2 shadow-md"
           animate={{ rotate: [6, 4, 6], y: [0, -2, 0] }}
@@ -37,7 +35,6 @@ export function NotFoundHero() {
         </motion.div>
       </div>
 
-      {/* Headline */}
       <motion.h2
         className="font-syne font-black tracking-tight leading-tight mb-3 max-w-lg"
         style={{ fontSize: 'clamp(22px, 4vw, 34px)' }}
@@ -54,7 +51,6 @@ export function NotFoundHero() {
         </em>
       </motion.h2>
 
-      {/* Sub */}
       <motion.p
         className="font-dm-sans text-[15px] text-text-secondary leading-relaxed max-w-sm mb-9"
         initial={{ opacity: 0, y: 16 }}
@@ -65,7 +61,6 @@ export function NotFoundHero() {
         relatable. The rest of the site does exist, though.
       </motion.p>
 
-      {/* CTAs */}
       <motion.div
         className="flex gap-2.5 justify-center flex-wrap mb-10"
         initial={{ opacity: 0, y: 16 }}
