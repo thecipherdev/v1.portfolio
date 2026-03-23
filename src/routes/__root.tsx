@@ -2,13 +2,11 @@ import { TanStackDevtools } from '@tanstack/react-devtools';
 import type { QueryClient } from '@tanstack/react-query';
 import {
   HeadContent,
+  Outlet,
   Scripts,
   createRootRouteWithContext,
 } from '@tanstack/react-router';
 import { TanStackRouterDevtoolsPanel } from '@tanstack/react-router-devtools';
-
-import Footer from '@components/layout/Footer';
-import { Navbar } from '@components/layout/Navbar';
 
 import TanStackQueryDevtools from '../integrations/tanstack-query/devtools';
 import TanStackQueryProvider from '../integrations/tanstack-query/root-provider';
@@ -116,7 +114,7 @@ export const Route = createRootRouteWithContext<MyRouterContext>()({
   shellComponent: RootDocument,
 });
 
-function RootDocument({ children }: { children: React.ReactNode }) {
+function RootDocument() {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
@@ -125,9 +123,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
       </head>
       <body className="antialiased [overflow-wrap:anywhere] selection:bg-[rgba(79,184,178,0.24)]">
         <TanStackQueryProvider>
-          <Navbar />
-          {children}
-          <Footer />
+          <Outlet />
           <TanStackDevtools
             config={{
               position: 'bottom-right',
